@@ -20,6 +20,6 @@ document.getElementById('dowry-form').addEventListener('submit', function(e) {
     // Show result
     let resultDiv = document.getElementById('result');
     resultDiv.style.display = 'block';
-    document.getElementById('dowry-worth').innerText = `$${dowryWorth}`;
+    document.getElementById('dowry-worth').innerText = `Rs.${dowryWorth}`;
   });
   
