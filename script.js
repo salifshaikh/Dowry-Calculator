@@ -5,6 +5,8 @@ document.getElementById('dowry-form').addEventListener('submit', function(e) {
     let age = parseInt(document.getElementById('age').value);
     let height = parseInt(document.getElementById('height').value);
     let colour = parseInt(document.getElementById('colour').value);
+    let physique = parseInt(document.getElementById('fitness').value);
+    let tours = parseInt(document.getElementById('travel').value);
     let education = parseInt(document.getElementById('education').value);
     let salary = parseInt(document.getElementById('salary').value);
     let house = parseInt(document.getElementById('house').value);
@@ -15,7 +17,7 @@ document.getElementById('dowry-form').addEventListener('submit', function(e) {
     let halfSalary = salary / 2;
   
     // Simple dowry calculation logic
-    let dowryWorth = (education + halfSalary + house + car + fathersOccupation + location + colour) + age + (height * 100);
+    let dowryWorth = (tours + physique + education + halfSalary + house + car + fathersOccupation + location + colour) + age + (height * 120);
   
     // Show result
     let resultDiv = document.getElementById('result');
